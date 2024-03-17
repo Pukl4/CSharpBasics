@@ -10,10 +10,10 @@
              *     -set values in a dictionary;
              *     -add values;
              *     -remove values;
-             *     -clear'
-             *     -check if dictionary contains key
+             *     -clear;
+             *     -check if dictionary contains key;
              *     
-             *    !Keys in dictionary must to be unique, values don't!*/
+             *     Keys in dictionary must to be unique, values don't*/
 
             //Declaring a dictionary: Dictionary<key data type, value data type> name =new();
             Dictionary<string, int> wordsToNumbers = new();
