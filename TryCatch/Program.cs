@@ -20,7 +20,7 @@
                 Console.WriteLine("An exception was thrown");
                 Console.WriteLine(ex.Message);
             }
-            //We can use a finally block to run code after a try-cathc block 
+            //We can use a finally block to run code after a try-catch block 
             finally 
             {
                 Console.WriteLine("This code always runs");
