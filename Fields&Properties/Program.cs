@@ -1,6 +1,4 @@
-﻿using System;
-using System.Xml.Linq;
-
+﻿
 namespace Fields_Properties
 {
     internal class Program
