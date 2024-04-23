@@ -21,7 +21,10 @@ public sealed class NicksCoolCalculator
         Dictionary<string, string> supportedOperators = new()
         {
             { "+", "Add" },
-            { "/", "Divide" }
+            { "/", "Divide" },
+            { "-", "Subtract" },
+            { "*", "Multiply" }
+
         };
 
         while (true)
@@ -93,6 +96,8 @@ public sealed class NicksCoolCalculator
                     {
                         "+" => firstNumber + secondNumber,
                         "/" => firstNumber / secondNumber,
+                        "*" => firstNumber * secondNumber,
+                        "-" => firstNumber - secondNumber,
                         _ => throw new NotSupportedException($"Arithmetics is not currently supported for operator {operatorChoice}.")
                     };
                 }
