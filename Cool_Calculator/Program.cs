@@ -47,20 +47,20 @@ public sealed class NicksCoolCalculator
             Console.WriteLine();
 
             Console.WriteLine(
-                $"Recall that integers are on the range {int.MinValue} to {int.MaxValue}!");
+                $"Recall that integers are on the range {double.MinValue} to {double.MaxValue}!");
             Console.WriteLine();
 
-            int firstNumber;
-            int secondNumber;
+            double firstNumber;
+            double secondNumber;
 
             while (true)
             {
-                Console.WriteLine("Enter the first integer:");
+                Console.WriteLine("Enter the first double:");
                 string firstNumberInput = Console.ReadLine();
-                if (!int.TryParse(firstNumberInput, out firstNumber))
+                if (!double.TryParse(firstNumberInput, out firstNumber))
                 {
                     Console.WriteLine(
-                        $"{firstNumberInput} could not be parsed as an integer!");
+                        $"{firstNumberInput} could not be parsed as an double!");
                     continue;
                 }
                 break;
@@ -68,11 +68,11 @@ public sealed class NicksCoolCalculator
 
             while (true)
             {
-                Console.WriteLine("Enter the second integer:");
+                Console.WriteLine("Enter the second double:");
                 string secondNumberInput = Console.ReadLine();
-                if (!int.TryParse(secondNumberInput, out secondNumber))
+                if (!double.TryParse(secondNumberInput, out secondNumber))
                 {
-                    Console.WriteLine($"{secondNumberInput} could not be parsed as an int.");
+                    Console.WriteLine($"{secondNumberInput} could not be parsed as an double.");
                     continue;
                 }
 
@@ -87,7 +87,7 @@ public sealed class NicksCoolCalculator
 
             while (true)
             {
-                int result;
+                double result;
                 try
                 {
                     result = operatorChoice switch
@@ -110,25 +110,17 @@ public sealed class NicksCoolCalculator
                 break;
             }
 
-                    
-            while (true)
+         
+            Console.WriteLine("Do you want to continue?");
+            string response = Console.ReadLine();
+            if (string.Equals(response, "yes", StringComparison.InvariantCultureIgnoreCase))
             {
-                Console.WriteLine("Do you want to continue?");
-                string response = Console.ReadLine();
-                if (string.Equals(response, "yes", StringComparison.InvariantCultureIgnoreCase))
-                {
-                    continue;
-                }
-                if (string.Equals(response, "no", StringComparison.InvariantCultureIgnoreCase))
-                {
-                    break;
-                }
-                else
-                {
-                    Console.WriteLine("Invalid input, try again");
-                    continue;
-                }
-            }    
+                continue;
+            }
+            else
+            {
+                break;
+            }        
         }
     }             
 }
