@@ -24,7 +24,6 @@ public sealed class NicksCoolCalculator
             { "/", "Divide" },
             { "-", "Subtract" },
             { "*", "Multiply" }
-
         };
 
         while (true)
@@ -86,7 +85,6 @@ public sealed class NicksCoolCalculator
             }
 
 
-
             while (true)
             {
                 int result;
@@ -113,24 +111,24 @@ public sealed class NicksCoolCalculator
             }
 
                     
-
-            Console.WriteLine("Do you want to continue?");
-            string response=Console.ReadLine();
-            if (string.Equals(response, "yes", StringComparison.InvariantCultureIgnoreCase))
+            while (true)
             {
-                continue;
-            }
-            else
-            {
-                break;         
-            }
-
-                        
-                        
+                Console.WriteLine("Do you want to continue?");
+                string response = Console.ReadLine();
+                if (string.Equals(response, "yes", StringComparison.InvariantCultureIgnoreCase))
+                {
+                    continue;
+                }
+                if (string.Equals(response, "no", StringComparison.InvariantCultureIgnoreCase))
+                {
+                    break;
+                }
+                else
+                {
+                    Console.WriteLine("Invalid input, try again");
+                    continue;
+                }
+            }    
         }
-                               
-                    
-            
-    }
-                
+    }             
 }
