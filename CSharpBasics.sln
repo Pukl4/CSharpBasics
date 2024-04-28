@@ -37,6 +37,8 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Constructors", "Consturctor
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DemoProgram", "Cool_Calculator\DemoProgram.csproj", "{C9AFBEF6-5105-4C7A-932F-BBAAEEFE03CC}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Classes_and_Objects", "Classes_and_Objects\Classes_and_Objects.csproj", "{B6A4D9BF-FE88-49E3-986D-27AE6EB742D7}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -111,6 +113,10 @@ Global
 		{C9AFBEF6-5105-4C7A-932F-BBAAEEFE03CC}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{C9AFBEF6-5105-4C7A-932F-BBAAEEFE03CC}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{C9AFBEF6-5105-4C7A-932F-BBAAEEFE03CC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B6A4D9BF-FE88-49E3-986D-27AE6EB742D7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B6A4D9BF-FE88-49E3-986D-27AE6EB742D7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B6A4D9BF-FE88-49E3-986D-27AE6EB742D7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B6A4D9BF-FE88-49E3-986D-27AE6EB742D7}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

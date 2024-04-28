@@ -39,13 +39,6 @@
             }
         }
 
-
-
-
-
-
-
-
         // Struct, basically, is user defined type
         struct Rectangle
         {
