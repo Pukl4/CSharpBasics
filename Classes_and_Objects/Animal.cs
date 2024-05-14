@@ -9,12 +9,23 @@ namespace Classes_and_Objects
         class Animal
         {   //When we set name and sound as private they can only be accessed through get and set
             private string name;
-            private string sound;
-            public static int numOfAnimals = 0;
-            public const string SHELTER = "Nick's Home for Animals";
+            protected string sound;
+            protected AnimalIDInfo animalIDInfo = new AnimalIDInfo();
+            public void SetAnimalIDInfo(int idNum, string owner)
+            {
+                animalIDInfo.IDNum = idNum;
+                animalIDInfo.Owner = owner;
+            }
 
-            //readonly value cannot be changed
-            public readonly int idNum;
+            public void GetAnimalIDInfo()
+            {
+                Console.WriteLine($"{Name} has the ID of {animalIDInfo.IDNum} and is owned by {animalIDInfo.Owner}");
+            }
+
+            public virtual void MakeSound()
+            {
+                Console.WriteLine($"{name} says {sound}");
+            }
 
             public Animal() : this("No name", "No sound") { }
             
@@ -22,40 +33,22 @@ namespace Classes_and_Objects
 
             public Animal(string name, string sound)
             {
-                SetName(name);
+                Name = name;
                 Sound = sound;
-
-                NumOfAnimals = 1;
-                Random rnd = new Random(); 
-                idNum= rnd.Next(1, 2147483640);
-            }
-            
-            
-            public void MakeSound()
-            {
-                Console.WriteLine("{0} says {1}", name, sound);
-            }
-            
-            public static int GetNumAnimals()
-            {
-                return numOfAnimals;
             }
 
-            public void SetName(string name)
+            public string Name
             {
-                if (!name.Any(char.IsDigit)) 
+                get { return name; }
+                set
                 {
-                    this.name = name;
+                    if (value.Any(char.IsDigit))
+                    {
+                        name = "No Name";
+
+                    }
+                    name = value;
                 }
-                else
-                {
-                    this.name = "No name";
-                    Console.WriteLine("Name can't contain numbers");
-                }
-            }
-            public string GetName()
-            {
-                return name;
             }
 
             public string Sound
@@ -75,12 +68,17 @@ namespace Classes_and_Objects
                 }
             }
 
-            public string Owner { get; set; } = "No Owner";
-            
-            public static int NumOfAnimals
+            public class AnimalHealth
             {
-                get { return numOfAnimals; }
-                set { numOfAnimals += value; }
+            public bool HealthyWeight(double height, double weight)
+            {
+                double calc = height / weight;
+                if ((calc >= .18) && (calc <= .27))
+                {
+                    return true;
+                }
+                else return false;
+            }
             }
         }  
 }
