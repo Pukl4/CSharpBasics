@@ -13,6 +13,7 @@ namespace Abstract_Classes
 
         public Rectangle(double length, double width)
         {
+            Name = "Rectangle";
             Length = length;
             Width = width;
         }
