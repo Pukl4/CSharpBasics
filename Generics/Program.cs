@@ -10,6 +10,7 @@ namespace Generics
     {
         static void Main(string[] args)
         {
+            
             List<Animal> animalList = new List<Animal>();
 
             List<int> numList = new List<int>();
@@ -37,6 +38,17 @@ namespace Generics
 
             Rectangle<string> rec2 = new Rectangle<string>("20", "50");
             Console.WriteLine(rec2.GetArea());
+
+            Arithmetic add, sub, addSub;
+            add = new Arithmetic(Add);
+            sub = new Arithmetic(Subtract);
+            addSub = add + sub;
+
+            Console.WriteLine($"Add {6} & {10}");
+            Add(6, 10);
+            Console.WriteLine($"Add & Subtract {10} & {4}");
+            addSub(10, 4);
+
         }
 
         public struct Rectangle<T>
@@ -68,6 +80,17 @@ namespace Generics
                 double dblLength = Convert.ToDouble(Length);
                 return string.Format($"{Width}*{Length} = {dblWidth * dblLength}");
             }
+        }
+
+        public delegate void Arithmetic(double num1, double num2);
+        public static void Add(double num1, double num2)
+        {
+            Console.WriteLine($"{num1} + {num2} = {num1 + num2}");
+        }
+
+        public static void Subtract(double num1, double num2)
+        {
+            Console.WriteLine($"{num1} - {num2} = {num1 - num2}");
         }
     }
 }
