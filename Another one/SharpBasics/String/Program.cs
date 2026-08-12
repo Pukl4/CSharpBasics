@@ -19,6 +19,7 @@
 
             // Taking the user input and storing it in a variable
             string userInput = Console.ReadLine();
+            // Displaying the user input
             Console.WriteLine("Output is: " + userInput);
             Console.ReadKey();
         }
