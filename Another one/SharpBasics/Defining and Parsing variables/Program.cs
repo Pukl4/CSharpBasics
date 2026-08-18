@@ -14,6 +14,16 @@
 
             basenumber = int.Parse(userInput);
             Console.WriteLine($"The number you entered is: {basenumber}");
+
+            // Initializing two variables
+            Console.WriteLine("Enter the first number:");
+            int firstNumber = int.Parse(Console.ReadLine());
+
+            Console.WriteLine("Enter the second number:");
+            int secondNumber = int.Parse(Console.ReadLine());
+
+            int sum = firstNumber + secondNumber;
+            Console.WriteLine("The result of " + firstNumber + " + " + secondNumber + " is " + sum);
         }
     }
 }
