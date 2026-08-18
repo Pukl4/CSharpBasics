@@ -24,6 +24,9 @@
 
             int sum = firstNumber + secondNumber;
             Console.WriteLine("The result of " + firstNumber + " + " + secondNumber + " is " + sum);
+
+            // String interpolation
+            Console.WriteLine($"The result of {firstNumber} + {secondNumber} is {sum}");
         }
     }
 }
