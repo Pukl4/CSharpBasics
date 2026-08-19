@@ -27,6 +27,18 @@
 
             // String interpolation
             Console.WriteLine($"The result of {firstNumber} + {secondNumber} is {sum}");
+
+            // Operators and Order of Evaluation
+            // Sum and subtraction are evaluated from left value to the right 
+            // Division and multiplication are evaluated in priority
+
+            Console.WriteLine("Addition firstNumber + secondNumber = " + firstNumber + secondNumber);
+
+            // Without additional brakets it will be considered as a string
+            Console.WriteLine("Addition firstNumber + secondNumber = " + (firstNumber + secondNumber));
+
+            Console.WriteLine("Multiplication of firstNumber * secondNumber = " + firstNumber * secondNumber);
+            Console.WriteLine("Division of firstNumber * secondNumber = " + firstNumber / secondNumber);
         }
     }
 }
