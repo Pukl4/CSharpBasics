@@ -23,10 +23,14 @@
             int secondNumber = int.Parse(Console.ReadLine());
 
             int sum = firstNumber + secondNumber;
+            // String concatination
             Console.WriteLine("The result of " + firstNumber + " + " + secondNumber + " is " + sum);
 
             // String interpolation
             Console.WriteLine($"The result of {firstNumber} + {secondNumber} is {sum}");
+
+            // String formatting 
+            Console.WriteLine("The result of {0} + {1} is {2}", firstNumber, secondNumber, sum);
 
             // Operators and Order of Evaluation
             // Sum and subtraction are evaluated from left value to the right 
@@ -39,6 +43,9 @@
 
             Console.WriteLine("Multiplication of firstNumber * secondNumber = " + firstNumber * secondNumber);
             Console.WriteLine("Division of firstNumber * secondNumber = " + firstNumber / secondNumber);
+
+            // char stores one character as a UTF-16 code unit, defined by single quote
+            char cncharacter = 'ツ';
         }
     }
 }
