@@ -46,6 +46,11 @@
 
             // char stores one character as a UTF-16 code unit, defined by single quote
             char cncharacter = 'ツ';
+
+            // Escape characters are used to represent the specific character
+            // that otherwise is used for writing code
+            // primary example is "\", "\n" for new line, "\t" for horizontal tab
+            Console.WriteLine("This is a sting with \\ and a colon:\n\tfollowing on new line with horizontal tab");
         }
     }
 }
