@@ -49,8 +49,24 @@
             {
                 Console.WriteLine("Isn't greater");
             }
-
             // Equality operators are == (equal) != (not equal)
+
+            // Incrementing/Decrementing of integer
+            int num = 0;
+            num++; // will increase the number by 1
+            num--; // will decrease the number by 1
+
+            // Pre-incrementing means it will increase the number after the line is executed
+            ++num;
+            --num;
+
+            //Incrementing by certain value
+            num += 30;
+            num -= 30;
+            num *= 10;
+            num /= 10;
+            num %= 10;
+
         }
     }
 }
