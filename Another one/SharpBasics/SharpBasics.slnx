@@ -1,5 +1,6 @@
 <Solution>
   <Project Path="Conversion/Conversion.csproj" Id="84dfeb6d-be87-497d-8a71-2d5801425a52" />
   <Project Path="Defining and Parsing variables/Defining and Parsing variables.csproj" Id="a92c3ff5-58f8-4811-a588-a0820c592216" />
+  <Project Path="Logic/Logic.csproj" Id="102a7feb-d3b2-4719-b6c7-542f762f0cb7" />
   <Project Path="String/String.csproj" />
 </Solution>
