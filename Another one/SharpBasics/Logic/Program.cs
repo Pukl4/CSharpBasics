@@ -28,12 +28,29 @@
             // Relational operators are < <= > >=
             // Boolean are false by default and turn into true only after initialization
 
-            int num1 = 10;
+            int num1 = 6;
             int num2 = 8;
 
             bool isGreater = num1 > num2;
 
             if (num1 > 5) { Console.WriteLine("Is greater"); }
+
+            // Else is a statement which will be executed if the if statement is false
+
+            if (isGreater)
+            {
+                Console.WriteLine("Is greater");
+            } 
+            else if ((num1 + num2) > 10) 
+            { 
+                Console.WriteLine("Sum is greater"); 
+            }
+            else
+            {
+                Console.WriteLine("Isn't greater");
+            }
+
+            // Equality operators are == (equal) != (not equal)
         }
     }
 }
