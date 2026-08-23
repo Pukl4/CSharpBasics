@@ -40,10 +40,10 @@
             if (isGreater)
             {
                 Console.WriteLine("Is greater");
-            } 
-            else if ((num1 + num2) > 10) 
-            { 
-                Console.WriteLine("Sum is greater"); 
+            }
+            else if ((num1 + num2) > 10)
+            {
+                Console.WriteLine("Sum is greater");
             }
             else
             {
@@ -67,6 +67,15 @@
             num /= 10;
             num %= 10;
 
+            // TryParse returnes boolean value and outputs the converted value
+
+            int num1;
+            Console.WriteLine("Enter a number: ");
+            string inputNum = Console.ReadLine().Trim();
+
+
+            if (int.TryParse(inputNum, out num1)) { Console.WriteLine($"You've entered: {num1}"); }
+            else { Console.WriteLine("Please enter a valid number"); };
         }
     }
 }
