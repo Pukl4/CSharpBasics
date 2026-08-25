@@ -3,6 +3,7 @@
   <Project Path="Defining and Parsing variables/Defining and Parsing variables.csproj" Id="a92c3ff5-58f8-4811-a588-a0820c592216" />
   <Project Path="DndHit/DndHit.csproj" Id="d7a2a293-ac2c-4c9a-9f65-c9daaa719008" />
   <Project Path="Logic/Logic.csproj" Id="102a7feb-d3b2-4719-b6c7-542f762f0cb7" />
+  <Project Path="Loops/Loops.csproj" Id="f954492e-3486-4540-acf0-c8338e10aa9c" />
   <Project Path="simpleCalc/simpleCalc.csproj" Id="5bc24490-5fe1-42cc-b959-158f735528b2" />
   <Project Path="String/String.csproj" />
 </Solution>
