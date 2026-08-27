@@ -44,6 +44,17 @@
                 numb+=5;
                 Console.WriteLine("One time for sure");
             } while(numb <= 10);
+
+            // break statement is used to stop executing the loop after certain condition are met
+            // continue statement keeps the loop running but skips specific steps based on a condition
+            for (int i = 1; i <= 10; i++)
+            {
+                if (i == 5)
+                {
+                    break; // Exits the loop entirely when i becomes 5
+                }
+                Console.WriteLine(i);
+            }
         }
     }
 }
