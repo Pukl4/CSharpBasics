@@ -33,6 +33,17 @@
                 };
             };
             Console.WriteLine($"Ended after {index} times");
+
+            // do while loop executes code one time and then check if the confidion was met
+
+            int numb;
+            do
+            {
+                Console.WriteLine("Enter a number: ");
+                numb = int.Parse(Console.ReadLine());
+                numb+=5;
+                Console.WriteLine("One time for sure");
+            } while(numb <= 10);
         }
     }
 }
