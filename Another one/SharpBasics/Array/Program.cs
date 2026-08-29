@@ -21,6 +21,19 @@
             int[] decIntArray = [1, 12, 14, 16];
             string[] strArray = ["Monday", "Tueday", "Wednesday"];
             Console.WriteLine(strArray[0] + $" {decIntArray[3]}");
+
+            // Length gets the total number of elements in array
+            Console.WriteLine($"The length of the strArray is {strArray.Length}");
+
+            foreach (int i in decIntArray)
+            {
+                Console.WriteLine(i);            
+            }
+
+            foreach (string i in strArray)
+            {
+                Console.WriteLine(i);
+            }
         }
     }
 }
