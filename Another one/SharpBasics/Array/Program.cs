@@ -34,6 +34,14 @@
             {
                 Console.WriteLine(i);
             }
+
+            // TwoDimensional array initialization
+            // [1] [2]
+            // [3] [4]
+            int[,] twoDimArray = { { 1, 2 }, { 3, 4 } };
+            Console.WriteLine(twoDimArray[1, 0]);
+            twoDimArray[1, 0] = 5;
+            Console.WriteLine(twoDimArray[1, 0]);
         }
     }
 }
