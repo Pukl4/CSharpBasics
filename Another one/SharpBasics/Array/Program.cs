@@ -42,6 +42,17 @@
             Console.WriteLine(twoDimArray[1, 0]);
             twoDimArray[1, 0] = 5;
             Console.WriteLine(twoDimArray[1, 0]);
+
+            //Jagged arrays is an arrays of arrays, each element in the main array can hold a different number of elements
+            //Basic declaration:
+            //int[][] jaggedArray;
+
+            //Initialization:
+            int[][] jaggedArray = new int[3][];
+            jaggedArray[0] = new int[] { 1, 2, 3 };
+            jaggedArray[1] = new int[] { 4, 5 };
+            jaggedArray[2] = new int[] { 6, 7, 8, 9 };
+
         }
     }
 }
