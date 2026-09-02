@@ -2,6 +2,8 @@
 {
     internal class Program
     {
+        // Field (or instance variable)
+        int result;
         static void Main(string[] args)
         {
             SimpleMethod();
