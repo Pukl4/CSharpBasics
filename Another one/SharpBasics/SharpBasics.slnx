@@ -10,4 +10,5 @@
   <Project Path="Loops/Loops.csproj" Id="f954492e-3486-4540-acf0-c8338e10aa9c" />
   <Project Path="simpleCalc/simpleCalc.csproj" Id="5bc24490-5fe1-42cc-b959-158f735528b2" />
   <Project Path="String/String.csproj" />
+  <Project Path="WeatherPredictorApp/WeatherPredictorApp.csproj" Id="df1e1b9f-9fac-4f15-9db0-2c8e18e15459" />
 </Solution>
