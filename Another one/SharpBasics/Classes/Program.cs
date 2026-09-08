@@ -7,7 +7,8 @@ namespace Classes
         static void Main(string[] args)
         {
             Car toyota = new Car("Toyota", "Corolla", 1999);
-            Car Honda = new Car("Honda", "Civic", 2005);
+            Car honda = new Car("Honda", "Civic", 2005);
+            Car bmw = new Car("BMW", "", 2020);
         }
     }
 }
