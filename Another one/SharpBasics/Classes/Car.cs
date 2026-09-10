@@ -25,6 +25,16 @@ namespace Classes
             Console.WriteLine(Brand + ", " + Model + ", " + Year);
         }
 
+        // Default constructor is a constructor that takes no parameters.
+        // It is used to create an object with default values.
+        public Car()
+        {
+            Brand = "Unknown";
+            Model = "Unknown";
+            Year = 0;
+            Isluxury = false;
+        }
+
         public string Brand {
             get 
             {
