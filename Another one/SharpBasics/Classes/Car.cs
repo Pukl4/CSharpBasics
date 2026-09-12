@@ -7,8 +7,12 @@ namespace Classes
 {
     public class Car
     {
-       //private modifier means that something can only be accessed from within
-       //the class where it is declared.
+       // Static variables/fields:
+
+        public static int CarNumber = 0;
+
+       // Private modifier means that something can only be accessed from within
+       // the class where it is declared.
         private string _brand = string.Empty;
         private string _model = string.Empty;
         private int _year = 0;
@@ -16,8 +20,11 @@ namespace Classes
 
         // Constructor is a code with the same name as a class
         // and it is automatically called when an object of a class is created.
-        public Car(string brand, string model, int year, bool isLuxury)
+        
+        // Default/Optional operator
+        public Car(string brand, string model, int year = 0, bool isLuxury = false)
         {
+            CarNumber++;
             Brand = brand;
             Model = model;
             Year = year;
@@ -69,5 +76,12 @@ namespace Classes
          * }
          */
         public bool Isluxury { get => _isluxury; set => _isluxury = value; }
+
+        // Declaring a method
+        // static method does not require creating an object in order for code to be used
+        public static void PrintSmth()
+        {
+            Console.WriteLine("Something");
+        }
     }
 }
